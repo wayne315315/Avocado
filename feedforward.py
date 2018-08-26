@@ -295,8 +295,8 @@ if __name__ == '__main__':
 	subgroup = ('organic', 'Boston')
 	#subgroup = ('conventional', 'Sacramento')
 
-	r2_pretrain = np.array([cycle(subgroup) for _ in range(10)])
-	r2_novel = np.array([cycle(subgroup, pretrain=False) for _ in range(10)])
+	r2_pretrain = np.array([cycle(subgroup) for _ in range(30)])
+	r2_novel = np.array([cycle(subgroup, pretrain=False) for _ in range(30)])
 	mean_r2_pretrain = np.mean(r2_pretrain)
 	mean_r2_novel = np.mean(r2_novel)
 	std_r2_pretrain = np.std(r2_pretrain)
